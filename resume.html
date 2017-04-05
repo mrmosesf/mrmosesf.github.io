@@ -5,106 +5,124 @@
     <title>Résumé</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <!--Used only because I like how the IDE gives suggestions-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/resume.css">
 
-    <style>
-        .parallax {
-            /* The image used */
-            background-image: url("http://placehold.it/400x1600");
-
-            /* Set a specific height */
-            max-height: 100%;
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
 
 </head>
 <body>
-
-<!--Top navigation bar, with hamburger-->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="img/masthead.svg" alt="Small brand logo" height="30px" ">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Welcome <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Resume</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!--Dropdown with methods to connect-->
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect with me <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-
-<main>
+<div class="container-fluid">
     <div class="row">
-        <div class="media">
-            <div class="media-left">
-                <a href="#">
-                    <img class="http" src="..." alt="...">
+        <!--Top navigation bar, with hamburger-->
+        <nav class="navbar navbar-default">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/masthead.svg" alt="Small brand logo" height="30px" ">
                 </a>
             </div>
-            <div class="media-body">
-                <h4 class="media-heading">Media heading</h4>
-                ...
-            </div>
-        </div>
-</main>
 
-
-<footer class="panel-footer">
-    <div class="container">
-        <p class="text-muted">
-            &copy 2017 Mo, Inc. All Rights Reserved
-        </p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Welcome <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Portfolio <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--Dropdown with methods to connect-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Connect with me <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
     </div>
-</footer>
+
+    <div class="row">
+
+
+        <div class=" col-lg-4">
+            <a href="#">
+                <img id="body_shot" class="media-object img-responsive" src="http://placehold.it/400x1200?text=It's+me"
+                     alt="Body shot">
+            </a>
+        </div>
+        <div class=" col-lg-8">
+            <h1 class="media-heading">Moses Franco</h1>
+            <h2>Software developer
+                <small>in progress</small>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam at atque autem, blanditiis
+                consequuntur deserunt dicta distinctio dolore doloribus dolorum ea eaque earum, eligendi et excepturi,
+                illum impedit ipsum iste laboriosam minima mollitia nulla obcaecati odit perspiciatis quam quidem
+                ratione reiciendis rem similique tenetur veritatis voluptas voluptatibus. Dolores, recusandae? Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet doloremque enim necessitatibus placeat
+                quam quasi ratione saepe sint voluptatum. Ad autem dolorum ex nostrum porro sapiente temporibus ut. Ab
+                ad animi asperiores assumenda atque beatae consectetur, distinctio dolore dolorem doloremque dolorum,
+                eligendi, error ex excepturi iusto obcaecati provident quam quasi reiciendis repellendus sint sit
+                tempora totam ullam voluptate! Animi asperiores corporis cupiditate deleniti eos excepturi facere,
+                harum, ipsum labore laudantium libero maiores nemo non odio, quam qui ratione repellat tenetur ut velit.
+                Assumenda culpa cumque dignissimos, doloremque ducimus eos est laborum nesciunt officiis omnis quasi
+                ratione sequi tempore ullam unde vitae voluptatum. Ab adipisci aliquam animi aut ipsa ipsum nisi vitae.
+                Adipisci consequatur dolores ducimus ea est eum itaque iusto labore laudantium maxime nemo quis,
+                quisquam sint, sunt unde veritatis, voluptatibus! Accusantium aliquam atque consequatur ducimus earum
+                facere inventore obcaecati praesentium quos, repellat similique suscipit tempore temporibus vitae
+                voluptatem. Ad animi aut beatae cum cumque dolor dolores eligendi enim facilis fugiat itaque iusto
+                labore minus molestiae nam, neque nisi, non nulla obcaecati omnis perspiciatis possimus quaerat quas,
+                quibusdam rem repudiandae sapiente sed sit soluta ullam veritatis vero voluptate voluptatibus? Ab alias
+                assumenda blanditiis dignissimos illum molestiae officiis quia sed?
+            </h2>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <footer class="panel-footer">
+            <div class="container">
+                <p class="text-muted">
+                    &copy 2017 Mo, Inc. All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>
 <!--Latest and minified JQuery-->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
