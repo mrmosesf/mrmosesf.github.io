@@ -7,7 +7,7 @@
         // This was done to show a modal after a delay, but in truth, should never be done, because it's kinda frustrating'
         setTimeout(function () {
             $('#resumeModal').modal('show');
-        }, 8000)
+        }, 8000);
     })
 
 })();
