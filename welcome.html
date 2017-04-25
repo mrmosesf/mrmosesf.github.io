@@ -5,7 +5,8 @@
     <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--Used only because I like how the IDE gives suggestions-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -16,7 +17,8 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -26,8 +28,16 @@
                 <!--<img src="img/masthead.svg" alt="Small brand logo" height="30px">-->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" height="30px" alt="Small brand logo" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
                     <style type="text/css">
-                        .st0{enable-background:new    ;}
-                        .st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                        .st0 {
+                            enable-background: new;
+                        }
+
+                        .st1 {
+                            fill: none;
+                            stroke: #000000;
+                            stroke-width: 2;
+                            stroke-miterlimit: 10;
+                        }
                     </style>
                     <g class="st0">
                         <path d="M37.5,14.6l2.5,33h-4.3l-1.3-19.2L22.7,49.8l-6.5-21.4l-6,19.2H5.7l10.4-32.3L23.7,40L37.5,14.6z"/>
@@ -47,7 +57,8 @@
                 <li class="active"><a href="#">Welcome <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Resume</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Portfolio <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -59,10 +70,11 @@
                     </ul>
                 </li>
             </ul>
-                <!--Dropdown with methods to connect-->
-                <ul class="nav navbar-nav navbar-right">
+            <!--Dropdown with methods to connect-->
+            <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect with me <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Connect with me <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Email</a></li>
                         <li><a href="#">GitHub</a></li>
@@ -76,6 +88,42 @@
     </div><!-- /.container-fluid -->
 </nav>
 <main>
+
+    <!--An alert, informing the user that this website is still very much still under construction-->
+    <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <strong>Hey!</strong> This website is still under construction, but feel free to still check it out.
+        <a href="#" class="alert-link"> Feel free to contact me however!</a>
+    </div>
+
+    <!--Adding in a modal, because why not?-->
+    <!-- Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Résumé</h4>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad aliquid at autem, cum,
+                    cumque cupiditate dignissimos et exercitationem facere impedit ipsa maiores molestias nam nemo neque
+                    nihil nisi nostrum officia placeat praesentium recusandae reiciendis repudiandae sequi soluta sunt
+                    tenetur vitae voluptas voluptate. Accusantium ad adipisci corporis dolorum, error eveniet expedita
+                    ipsum, laudantium nesciunt officia provident temporibus. Amet asperiores autem debitis facilis,
+                    illum libero maxime provident quaerat quam voluptatibus. Ab accusamus architecto at consequatur
+                    cumque debitis earum fugiat harum in ipsam iste iure laboriosam libero magni natus neque odio
+                    pariatur, porro quas quasi quia quod rem velit voluptatem voluptatum!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Jumbotron, with a gray out, some bottom text too featuring 4 images and a button-->
     <div class="row">
         <div class="jumbotron">
@@ -83,8 +131,16 @@
                 <!--<img src="img/masthead.svg" alt="Brand logo"width="50%" class="center-block">-->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="50%" class="center-block" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
                     <style type="text/css">
-                        .st0{enable-background:new    ;}
-                        .st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                        .st0 {
+                            enable-background: new;
+                        }
+
+                        .st1 {
+                            fill: none;
+                            stroke: #000000;
+                            stroke-width: 2;
+                            stroke-miterlimit: 10;
+                        }
                     </style>
                     <g class="st0">
                         <path d="M37.5,14.6l2.5,33h-4.3l-1.3-19.2L22.7,49.8l-6.5-21.4l-6,19.2H5.7l10.4-32.3L23.7,40L37.5,14.6z"/>
@@ -101,14 +157,17 @@
                     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, error, quae? Aliquam autem, doloremque ea neque perferendis quibusdam quos ut.</span>
                     <br><br>
                     <a class="btn btn-primary btn-lg" href="#" role="button">Check out my portfolio</a>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Read through my résumé</a>
+                    <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal"
+                       data-target="#resumeModal">Read through my résumé</a>
                 </p>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="center-block container text-center">
-            <h1>Powered by coffee <small>Propelled by snacks</small></h1>
+            <h1>Powered by coffee
+                <small>Propelled by snacks</small>
+            </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, tempore?</p>
         </div>
     </div>
@@ -117,55 +176,66 @@
             <div class="thumbnail col-md-4 col-xs-12">
                 <img src="http://placehold.it/160?text=Fact+1" alt="...">
                 <div class="caption">
-                    <h3>Fact 1, <small>lorem ipsum</small></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos modi nisi nostrum optio quisquam? A alias laudantium.</p>
+                    <h3>Fact 1,
+                        <small>lorem ipsum</small>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos modi nisi nostrum optio quisquam? A
+                        alias laudantium.</p>
                 </div>
             </div>
             <div class="thumbnail col-md-4 col-xs-12">
                 <img src="http://placehold.it/160?text=Fact+2" alt="...">
                 <div class="caption">
-                    <h3>Fact 2, <small>lorem ipsum</small></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto ea eum excepturi explicabo  quam sed vel.</p>
+                    <h3>Fact 2,
+                        <small>lorem ipsum</small>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto ea eum excepturi
+                        explicabo quam sed vel.</p>
                 </div>
             </div>
             <div class="thumbnail col-md-4 col-xs-12">
                 <img src="http://placehold.it/160?text=Fact+3" alt="...">
                 <div class="caption">
-                    <h3>Fact 3, <small>lorem ipsum</small></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Laudantium, quod!</p>
+                    <h3>Fact 3,
+                        <small>lorem ipsum</small>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit
+                        amet. Laudantium, quod!</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="center-block text-center container-fluid">
-            <h2>Sponsored by water <small>Crowd funding from the atmosphere</small></h2>
+            <h2>Sponsored by water
+                <small>Crowd funding from the atmosphere</small>
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, qui.</p>
         </div>
         <div class="row text-center">
             <div class="container">
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3 col-xs-12">
                     <p>
                         <a href="#" class="thumbnail">
                             <img src="http://placehold.it/160?text=Project+1" alt="...">
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3 col-xs-12">
                     <p>
                         <a href="#" class="thumbnail">
                             <img src="http://placehold.it/160?text=Project+2" alt="...">
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3 col-xs-12">
                     <p>
                         <a href="#" class="thumbnail">
                             <img src="http://placehold.it/160?text=Project+3" alt="...">
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3 col-xs-6">
+                <div class="col-md-3 col-xs-12">
                     <p>
                         <a href="#" class="thumbnail">
                             <img src="http://placehold.it/160?text=Project+4" alt="...">
@@ -174,8 +244,10 @@
                 </div>
             </div>
             <div class="container-fluid">
-            <h3>Just the beginning, <small> there is more that you can check out</small></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nesciunt.</p>
+                <h3>Just the beginning,
+                    <small> there is more that you can check out</small>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, nesciunt.</p>
                 <a class="btn btn-default btn-md" href="#" role="button">More</a>
             </div>
         </div>
@@ -190,9 +262,15 @@
     </div>
 </footer>
 
+
 <!--Latest and minified JQuery-->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!--Script tag opening custom JS-->
+<script src="js/js_script.js"></script>
 </body>
 </html>
