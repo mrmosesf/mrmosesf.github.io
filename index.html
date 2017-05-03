@@ -28,6 +28,8 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--Used only because I like how the IDE gives suggestions-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -72,10 +74,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Welcome <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Resume</a></li>
+                <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Portfolio <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -94,11 +96,11 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Connect with me <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Email</a></li>
-                        <li><a href="#">GitHub</a></li>
+                        <li><a href="mailto:mosesf@outlook.com?Subject=Hi%20Moses" target="_top">Email</a></li>
+                        <li><a href="https://github.com/mrmosesf">GitHub</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/moses.franco">Facebook</a></li>
+                        <li><a href="https://twitter.com/moseseseses">Twitter</a></li>
                     </ul>
                 </li><!--dropdown-->
             </ul><!--navbar-right-->
@@ -111,8 +113,9 @@
     <div class="alert alert-info alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
                 aria-hidden="true">&times;</span></button>
-        <strong>Hey!</strong> This website is still under construction, but feel free to still check it out.
-        <a href="#" class="alert-link"> Or contact me!</a>
+        <strong>Hey!</strong> This website is still under construction, but feel free to still check it out. Or contact me!
+        <a href="mailto:mosesf@outlook.com?Subject=Hi%20Moses"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span></a>
+        <a href="tel:210-418-0614"><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span></a>
     </div>
 
     <!--Adding in a modal, because why not?-->
@@ -273,13 +276,15 @@
     </div><!--row-->
 </main>
 
-<footer class="panel-footer">
-    <div class="container">
-        <p class="text-muted">
-            &copy 2017 Mo, Inc. All Rights Reserved
-        </p>
-    </div>
-</footer>
+<div class="row">
+    <footer class="panel-footer">
+        <div class="container">
+            <p class="text-muted">
+                &copy 2017 Mo, Inc. All Rights Reserved
+            </p>
+        </div>
+    </footer><!--panel-footer-->
+</div><!--row-->
 
 
 <!--Latest and minified JQuery-->
