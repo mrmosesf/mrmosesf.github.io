@@ -1,16 +1,16 @@
-@media (min-width: 970px) {
+/*@media (min-width: 970px) {*/
     .parallax {
         /* The image used */
-        background-image: url("http://placehold.it/600");
+        /*background-image: url("http://placehold.it/600");*/
 
         /* Full height, and some width */
-        height: 100%;
-        width: 30%;
+        height: 600px;
+        width: 600px;
 
-        /* Create the parallax scrolling effect */
+         /*Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-}
+/*}*/
