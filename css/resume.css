@@ -1,44 +1,16 @@
-/*#body_shot{
-    position: fixed;
-    margin-top: -1.3%;
-
-}*/
-
-.parallax {
-    background-color: transparent;
-}
-
-.split-image {
-    display: none;
-    background-position: 50% 0;
-    background-color: #222222;
-}
-
-.split-content {
-    /*padding: 100px 40px 0;
-    padding: 70px 40px 0;*/
-}
-
 @media (min-width: 970px) {
-    .split-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
+    .parallax {
+        /* The image used */
+        background-image: url("http://placehold.it/600");
+
+        /* Full height, and some width */
+        height: 100%;
+        width: 30%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        display: block;
-        background-position: 50% 0;
     }
-
-    .split-image,
-    .split-content {
-        width: 50%;
-    }
-
-    .split-content {
-        float: right;
-    }
-
-/*.container-fluid{*/
-    /*padding:0;*/
-/*}*/
+}
