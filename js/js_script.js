@@ -11,13 +11,21 @@
      $('#resumeModal').modal('show');
      }, 8000);*/
 
-    if ($(window).width() < 979) {
+    // TODO: Looks like bad code, fix it, in future might be better to detect whether or not the user is registering touch events
+    if ($(window).width() < 768) {
         $('#specialDropdown').removeClass('disabled');
-        console.log("Class should be removed");
     }
     else {
         $('#specialDropdown').addClass('disabled');
-        console.log("Dropdown is added");
     }
+
+    $(window).bind("resize", function () {
+        if ($(this).width() < 768) {
+            $('#specialDropdown').removeClass('disabled');
+        }
+        else {
+            $('#specialDropdown').addClass('disabled');
+        }
+    })
 
 })();
