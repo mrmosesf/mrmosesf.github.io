@@ -1,5 +1,7 @@
 /**
- * Created by mosesfranco on 5/3/17.
+ * Created by Moses Franco on 5/3/17
+ * Codeup
+ * Pinnacles
  */
 (function () {
 $('#headshot').affix({
