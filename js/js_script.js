@@ -11,21 +11,18 @@
      $('#resumeModal').modal('show');
      }, 8000);*/
 
+    // Functionality was removed until we get Level 4 media queries
     // TODO: Looks like bad code, fix it, in future might be better to detect whether or not the user is registering touch events
-    if ($(window).width() < 768) {
-        $('#specialDropdown').removeClass('disabled');
-    }
-    else {
-        $('#specialDropdown').addClass('disabled');
-    }
-
-    $(window).bind("resize", function () {
-        if ($(this).width() < 768) {
+    //Evolved form of previous code, still going to be disabled, since touch events instantly register a hover
+    /*($('#specialDropdown').hover(function () {
+            if ($(window).width() > 768) {
+                $('#specialDropdown').addClass('disabled');
+                console.log("In");
+            }
+        }, function () {
             $('#specialDropdown').removeClass('disabled');
-        }
-        else {
-            $('#specialDropdown').addClass('disabled');
-        }
-    })
+            console.log("Out");
+        }));*/
+
 
 })();
