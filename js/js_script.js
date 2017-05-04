@@ -1,5 +1,7 @@
 /**
- * Created by mosesfranco on 4/25/17.
+ * Created by Moses Franco on 4/25/17
+ * Codeup
+ * Pinnacles
  */
 (function () {
 
