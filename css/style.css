@@ -53,6 +53,10 @@ body {
 .marketing p + h4 {
     margin-top: 28px;
 }
+.thumbnail{
+    border: hidden;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     /* Remove the padding we set earlier */
@@ -78,12 +82,8 @@ body {
 }
 
 /*Dropdown menus display on hover for desktops, not mobile*/
-@media (min-width: 979px) {
+@media (min-width: 768px) {
     ul.nav li.dropdown:hover > ul.dropdown-menu {
         display: block;
     }
-}
-
-.thumbnail{
-    border: hidden;
 }
